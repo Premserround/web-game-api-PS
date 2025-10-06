@@ -177,5 +177,9 @@ app.put("/api/user/:uid", upload.single("photo"), (req, res) => {
   });
 });
 
+app.get('/test', (req, res) => {
+  res.send('Test hello gameshop'); // เวลาเรียก /hi จะตอบ hi
+});
+
 
 app.listen(port, () => console.log(` Server running on http://localhost:${port}`));
